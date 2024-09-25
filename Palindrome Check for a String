@@ -1,0 +1,10 @@
+def ispallindrome(a):
+    a = a.replace(" ", "").lower()
+    return a == a[::-1]
+
+b = input("Enter the String")
+if(ispallindrome(b)):
+    print(f"{b} is a pallindrome number")
+
+else:
+    print(f"{b} is not a pallindrome number")
